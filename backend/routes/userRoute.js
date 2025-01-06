@@ -10,7 +10,7 @@ import { fetch, create, update, deleteUser ,fetchById} from '../controller/userC
 const router = express.Router();
 
 router.get('/fetch', fetch);   // For GET requests
-router.get('/create', create); // For POST requests
+router.post('/create', create); // For POST requests
 router.put('/update/:id', update); // For POST requests
 router.delete('/delete/:id', deleteUser); // For POST requests
 router.get('/fetch1/:id', fetchById); // For POST requests
